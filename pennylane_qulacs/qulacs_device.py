@@ -96,6 +96,9 @@ class QulacsDevice(QubitDevice):
         "PauliZ": gate.Z,
         "Hadamard": gate.H,
         "PhaseShift": phase_shift,
+        "AmplitudeDamping": gate.AmplitudeDampingNoise,
+        "PhaseDamping": gate.DephasingNoise,
+        "DepolarizingChannel": gate.DepolarizingNoise
     }
 
     _observable_map = {
